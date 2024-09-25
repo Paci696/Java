@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        System.out.println("Enter the amount of money you will change: " + "$");
+        double amount = scanner.nextDouble();
+
+        System.out.println(amount*55.93 + " Pesos");
+        System.out.println(amount*0.3 + " Kuwati Dinar");
+        System.out.println(amount*1324.94 +" Won");
+
+    }
+}
