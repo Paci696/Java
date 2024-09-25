@@ -1,0 +1,43 @@
+import java.util.Scanner;
+public class Main {
+    public static Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        double ae, ww, ay, me;
+
+        System.out.println("Attendance: ");
+        ae = scanner.nextDouble();
+
+        System.out.println("Written Works: ");
+        ww = scanner.nextDouble();
+
+        System.out.println("Activity: ");
+        ay = scanner.nextDouble();
+
+        System.out.println("Major Exam: ");
+        me = scanner.nextDouble();
+
+        double ov = (ae*.10)+(ww*.20)+(ay*.30)+(me*.40);
+
+        System.out.println(" ");
+
+        System.out.println("*************************************");
+
+        System.out.println(" ");
+        System.out.println(" ");
+
+        System.out.println("Grades: "+ov);
+
+        if (ov>=75){
+            System.out.println("Remarks: Passed");
+
+        }else {
+            System.out.println("Remarks: Failed");
+        }
+
+
+
+
+
+    }
+}
