@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+    public static Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        int no1, no2;
+        char op;
+
+        System.out.println("Enter first number: ");
+        no1 = scanner.nextInt();
+
+        System.out.println("Enter second number: ");
+        no2 = scanner.nextInt();
+
+        System.out.println("enter operator: ");
+        op = scanner.next().charAt(0);
+
+        if(op == '+'){
+            System.out.println(no1 + " + " + no2 + " = " + (no1 + no2));
+        }
+        else if(op == '-'){
+            System.out.println(no1 + " - " + no2 + " = " + (no1 - no2));
+        }
+        else if(op == '*'){
+            System.out.println(no1 + " * " + no2 + " = " + (no1 * no2));
+        }
+        else if(op == '/'){
+            System.out.println(no1 + " / " + no2 + " = " + (no1 / no2));
+        }
+        else{
+            System.out.println("Invalid operator");
+        }
+
+
+
+
+    }
+}
